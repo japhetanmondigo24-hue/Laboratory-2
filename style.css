@@ -15,6 +15,9 @@ h2{
     6px 6px 0 #1c238a;   /* extra depth */
     
 }
+p{
+  text-align: justify;
+}
 body.light {
   background: #f4f4f9;
   color: #333;
@@ -118,4 +121,39 @@ footer {
   height: 100%;
   object-fit: cover; /* keeps image proportional */
 }
+
+.button3d {
+ 
+  background: linear-gradient(145deg, #4a90e2, #0d487c); /* gradient for depth */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* curved edges */
+  box-shadow: 5px 5px 10px #0a345f, -5px -5px 10px #061256; /* 3D shadow effect */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.button3d:hover { box-shadow: inset 3px 3px 6px #2c5d8a, inset -3px -3px 6px #5aa8f4;  
+  transform: translateY(2px); 
+ }
+
+
+
+h3{
+  text-align: center;
+  
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 
+    2px 2px 0 #000,   /* black outline */
+    4px 4px 0 #333,   /* deeper shadow */
+    6px 6px 0 #1c238a;   /* extra depth */
+}
+
+
+
+
 
