@@ -1,93 +1,113 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Group portfolio showcasing student profiles and blogs with interactive design.">
+  <link rel="icon" href="favicon.ico">
   <title>Group Portfolio & Blog</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <header>
-    <h1>Group Portfolio & Blog</h1>
-    <p>Welcome to our group portfolio and blog!</p>
-    
+    <div class="header-inner">
+      <h1><span class="logo">&#x1F4BB;</span> Group Portfolio & Blog</h1>
+      <p>Welcome to our group portfolio and blog!</p>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="blog1.html">Japhet's Blog</a>
+        <a href="blog2.html">Student 2 Blog</a>
+        <a href="#contact" class="scrollBtn">Contact</a>
+        <button id="navToggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </div>
   </header>
+  
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Professional. Collaborative. Creative.</h2>
+      <p>Explore our student profiles and follow our learning journey.</p>
+    </div>
+  </section>
 
-  <!-- Two Portfolio Blocks Side by Side -->
-  <section id="portfolio">
-    <div class="card">
-      <h2>Student 1</h2>
-      <div class="pfp"> 
-        <img src="Student1.jpg" alt="Studentpic">
+  <main>
+    <!-- Two Portfolio Blocks Side by Side -->
+    <section id="portfolio" class="container">
+      <div class="card">
+        <h2>Student 1</h2>
+        <div class="card-content">
+          <div class="pfp"> 
+            <img src="Student1.jpg" alt="Studentpic">
+          </div>
+          <div class="card-details">
+            <ul>
+              <li><strong>Name:</strong> Japhet A. Mondigo</li>
+              <li><strong>Address:</strong> Daraga, Albay, Philippines</li>
+              <li><strong>Hobbies:</strong> Coding, Gaming, Reading</li>
+              <li><strong>Interests:</strong> Web Development, Game Design</li>
+              <li><strong>Career Goals:</strong> Full-stack developer</li>
+              <li><strong>Strengths:</strong> Debugging, UI design, GitHub collaboration</li>
+            </ul>
+            <a href="blog1.html" class="btn">Go to Blog</a>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><strong>Name:</strong> Japhet A. Mondigo</li>
-        <li><strong>Address:</strong> Daraga, Albay, Philippines</li>
-        <li><strong>Hobbies:</strong> Coding, Gaming, Reading</li>
-        <li><strong>Interests:</strong> Web Development, Game Design</li>
-        <li><strong>Career Goals:</strong> Full-stack developer</li>
-        <li><strong>Strengths:</strong> Debugging, UI design, GitHub collaboration</li>
-      </ul>
-      <a href="#blog1" class="btn scrollBtn">Go to Blog</a>
-    </div>
 
-    <div class="card">
-      <h2>Student 2</h2>
-      <div class="pfp"> 
-        <img src="kiro.jpg" alt="Student2pic">
+      <div class="card">
+        <h2>Student 2</h2>
+        <div class="card-content">
+          <div class="pfp"> 
+            <img src="kiro.jpg" alt="Student2pic">
+          </div>
+          <div class="card-details">
+            <ul>
+              <li><strong>Name:</strong> Eric Z. Brul</li>
+              <li><strong>Address:</strong> Purok-4, San Jose Malilipot Albay </li>
+              <li><strong>Hobbies:</strong>  Reading books, Stargazing, Discovering</li>
+              <li><strong>Interests:</strong> Astronomy, Technology</li>
+              <li><strong>Career Goals:</strong> Front-end Developer</li>
+              <li><strong>Strengths:</strong> Creativity</li>
+            </ul>
+            <a href="blog2.html" class="btn">Go to Blog</a>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><strong>Name:</strong> </li>
-        <li><strong>Address:</strong> </li>
-        <li><strong>Hobbies:</strong> </li>
-        <li><strong>Interests:</strong></li>
-        <li><strong>Career Goals:</strong> </li>
-        <li><strong>Strengths:</strong> </li>
-      </ul>
-      <a href="#blog2" class="btn scrollBtn">Go to Blog</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog Sections -->
-  <section id="blog1">
-    <h2>Japhet's Blog</h2>
+    <section id="contact" class="container contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-    <div class="button3d">
-    
-    <article class="blog-entry">
-      <h3>Day 1: Coding Experience</h3>
-      <p class="date"></p>
-      <p>Worked on improving my PHP login system with secure password handling.</p>
-      <br>
-    </article>
-     </div>
-     
-    <div class="button3d">
-    <p class="date"></p>
-    <article class="blog-entry">
-      <h3>Day 2: Late night Study </h3>
-      <p>Its an exhausting day for me as I grind to finish my quiz reviewer for our course tommorow. I wish myself luck</p>
-    </article>
-    </div>
-  </section>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-  <section id="blog2">
-    <h2> Blog</h2>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-    <div class="button3d">
-      <p class="date"></p>
-      <article class="blog-entry">
-        <h3>Day 1: Personal Insight</h3>
-        <p>Explored new design inspirations and practiced UI layouts.</p>
-      </article>
-    </div>
-  </section>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Blog sections are now on separate pages: blog1.html and blog2.html -->
 
   <footer>
-    <p>&copy; 2026 Group Portfolio | Lab2</p>
+    <div class="footer-content container">
+      <p>&copy; 2026 Group Portfolio | Lab2</p>
+      <div class="social">
+        <a href="#" title="GitHub">🐙</a>
+        <a href="#" title="LinkedIn">🔗</a>
+        <a href="#" title="Twitter">🐦</a>
+      </div>
+    </div>
   </footer>
 
+  <button id="backTop" title="Back to top">↑</button>
   <script src="script.js"></script>
 </body>
 </html>
